@@ -1,0 +1,111 @@
+:root {
+    --main-font-color: black;
+    --main-page-max-width
+    : 375px;
+}
+
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--main-font-color);
+    text-rendering: optimizeLegibility;
+    background-color:  #c8b9caff;
+    font-family: source-sans-pro, sans-serif;
+  }
+
+  .feliratkozasjpg {
+      width: 100%;
+  }
+  
+  h1 {
+    margin-left: auto;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 2.8em;
+    color: black;
+    margin-right: auto;
+  }
+  
+  div {
+    width: 500px;
+    margin: auto;
+    width: var(--main-page-max-width);
+  }
+
+  .feliratkozasemail {
+   
+  }
+
+  .formStyle { 
+    background-color: white;
+    padding: 20px; 
+    display: flex;
+    width: 250px;
+    margin-bottom: 20px; 
+    border-bottom-width: 1px; 
+    border-bottom-style: solid; 
+    border-bottom-color: black; 
+    border-top-style: none; 
+    border-right-style: none; 
+    border-left-style: none; 
+    font-size: 1em;
+    font-weight: 100;
+    color: black;
+  }
+  
+  .formButton {
+    float: none;
+      background-color:black;
+      display: flex;
+      justify-content: center;
+      color:white;
+      font-size:28px;
+      font-weight: 500;
+      padding:6px 24px;
+    margin-top: 15px;
+    margin-right: 30px;
+      text-decoration:none;
+  }
+  
+  .formButton:hover {
+      background-color: white;
+    color:black;
+  }
+  
+  .formButton:active {
+      position: relative;
+      top:3px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  /*To remove the outline that appears on clicking the input textbox*/
+  input:focus {
+    outline: none;
+  }
+  
+  /* To format the placeholder text color */
+  ::-webkit-input-placeholder {
+     color: black;
+  }
+  
+  :-moz-placeholder { /* Firefox 18- */
+     color: black;  
+  }
+  
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color: black;  
+  }
+  
+  :-ms-input-placeholder {  
+     color: black;  
+  }

@@ -1,0 +1,193 @@
+:root {
+    --main-font-color: black;
+
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--main-font-color);
+    text-rendering: optimizeLegibility;
+    background-color: black;
+    color: honeydew;
+    text-shadow: 1px 1px 2px #000000;
+}
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding-top: 10px;
+        padding: 10px 10px;
+        margin-left: 50px;
+        width: 30%;
+        height: auto;
+    }
+  
+  #title-Tag-Line {
+    font-size: 15px;
+  }
+  /* .card-item__bg{
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    display: block;
+    position: relative;
+    margin: 30px auto;
+    transform: translate(0px, 50px);
+    z-index: 5;
+  } */
+  
+  /* form animation starts */
+  .form {
+    background: #fff;
+    
+    border-radius: 5px;
+    width: var(--main-page-max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    border-top: 5px solid honeydew;
+  /*   z-index: 1; */
+    animation: bounce 1.5s infinite;
+  }
+  ::-webkit-input-placeholder {
+    font-size: 1.3em;
+  }
+  
+  .title{
+    display: block;
+    font-family: sans-serif;
+    margin: 10px auto 5px;
+    width: 275px;
+  }
+  .termsConditions{
+    margin: 0 auto 5px 80px;
+  }
+  
+ 
+  .secondaryTitle{
+    text-shadow: 1px 1px 1px honeydew;
+    color: rgb(243, 192, 72);
+    font-size: 1.85rem;
+  }
+  
+  .name {
+    background-color: honeydew;
+    color: black;
+  }
+  .name:hover {
+    border-bottom: 5px solid #ffd470ff;
+    height: 30px;
+    width: 275px;
+    transition: ease 0.4s;
+  }
+  
+  .email {
+    background-color: honeydew;
+    height: 2em;
+  }
+  
+  .email:hover {
+    border-bottom: 5px solid #ffd470ff;
+    height: 30px;
+    width: 275px;
+    transition: ease 0.4s;
+  }
+  
+  .message {
+    background-color: honeydew;
+    overflow: hidden;
+    height: 16rem;
+  }
+  
+  .message:hover {
+    border-bottom: 5px solid #ffd470ff;
+    height: 12em;
+    width: 275px;
+    
+  }
+  
+  .formEntry {
+    display: block;
+    margin: 30px auto;
+    min-width: 275px;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    
+  }
+  
+  .submit {
+    width: 100px;
+    color: white;
+    background-color: grey;
+    font-size: 20px;
+  }
+  
+  .submit:hover {
+    background-color: #ffd470ff;;
+    box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+    width: 100px;
+    border-radius: 99%;
+  }
+  
+  //**
+  @keyframes bounce {
+    0% {
+      tranform: translate(0, 4px);
+    }
+    50% {
+      transform: translate(0, 8px);
+    }
+  } 
+**//
+
+.nyil:hover {
+    background-color: tomato;
+    color: #ffd470ff;
+    transition: 0.5s;
+    
+}
+
+.arrow img:hover {
+    color: #ffd470ff;
+    transition: 0.5s;
+    
+}   
+
+.arrow img {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 10px;
+    padding-top: 555px;
+    width: 13%;
+    height: auto;
+    
+   
+    
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding-top: 575px;
+  }
