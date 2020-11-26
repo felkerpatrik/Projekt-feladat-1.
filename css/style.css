@@ -5,7 +5,7 @@
 
 html {
     box-sizing: border-box;
-    font-size: 10px;
+    font-size: 15px;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -42,28 +42,38 @@ body {
 
 .topnav #myLinks {
   display: none;
-  padding: 14px 16px;
+  font-size: 24px;
   background-color: rgb(75, 75, 75);
+  height: 100px;
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 8px;
 }
+
 
 .topnav a {
   color:  white;
   text-decoration: none;
-  font-size: 17px;
   display: block;
 }
 
 .topnav a.icon {
-  background: black;
+  background: rgb(75, 75, 75);
   display: block;
   position: absolute;
   padding: 4px 8px;
   right: 1%;
   top: 10%;
+  height: 60px;
+  width: 60px;
 }
 
 .topnav a:hover {
   color: #ffd470ff;
+}
+
+.fa fa-bars {
+    height: 25px;
 }
 
 .active {
@@ -108,9 +118,9 @@ body {
     transform: translate(-50%, -95%);
     width: 100%;
     text-align: center;
-    font-size: 18px;
+    font-size: 32px;
     color: white;
-    text-shadow: 1px 1px 14px black;
+    text-shadow: 2px 2px 14px black;
 }
 
 .searchbar {
@@ -177,15 +187,16 @@ body {
 
 /****************** kapcsolat **************************/
 .kapcsolat {
-    box-sizing: border-box;
+    
     display: flex;
-    justify-content: center;
     flex-direction: row;
+    text-align: center;
     height: 450px;
     width: 100%;
     border-radius: 1%;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .wrapper1 h2 {
@@ -202,8 +213,8 @@ body {
     align-items: center;
     text-align: center;
     padding: 7px 10px 10px 10px;
-    width: 50%;
-    overflow: auto;
+ 
+   
     color: black;
 
 }
@@ -216,7 +227,7 @@ body {
     text-align: center;
     padding: 7px 10px 10px 10px;
     background-color: rgb(253, 233, 179);
-    width: 50%;
+    
     color: black;
 }
 
@@ -229,6 +240,8 @@ input[type=text], select, textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
   }
   
   input[type=submit] {
@@ -238,10 +251,13 @@ input[type=text], select, textarea {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    height: 14%;
+    width: 17%;
+    font-size: 18px;
   }
   
   input[type=submit]:hover {
-    background-color: rgb(250, 193, 61);
+    background-color: rgb(161, 122, 29);
   }
   
   
@@ -282,7 +298,7 @@ section h2 {
 }
 
 .container img {
-    height: 35px;
+    height: 40px;
     margin: 0,5rem 0;
     
 }
@@ -300,18 +316,15 @@ section h2 {
 .insta:hover {
     background-color: #9b2f96;
     border-radius: 20%;
-    padding: 0px 2px 0px 2px;
 }
 
 .facebook:hover {
     background-color: #4064ac;
     border-radius: 20%;
-    padding: 0px 2px 0px 2px;
 }
 .tiktok:hover {
     background-color: #f00043;
     border-radius: 20%;
-    padding: 0px 2px 0px 2px;
 }
 
 .arrow {
@@ -328,8 +341,12 @@ section h2 {
     top: 90%;
     left: 50%;
     transform: translate(-50%, 0%);
-    height: 35px;
+    height: 45px;
     margin: 0,5rem 0;
+}
+
+.arrow:hover {
+    text-decoration: underline, yellow;
 }
 
 footer  {
@@ -350,11 +367,15 @@ footer  {
 
     }
 
-    .searchbar {
-        width: 
+ 
+
+    .kapcsolat {
+        display: grid;
+        grid-template-areas: 
+        "1"
+        "2";
+        
     }
-
-
    
 }
 
@@ -366,10 +387,13 @@ footer  {
     grid-template-columns: repeat(3, 285);
     
     }
-    .topnav #myLinks {
-        display: list-item;
-    }
-
     
+
+    .kapcsolat {
+        grid-template-areas: 
+        "1 2";
+        width: 100%;
+        
+    }
 
 }
